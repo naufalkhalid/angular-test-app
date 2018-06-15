@@ -1,0 +1,24 @@
+<table class="table table-hover">
+  <thead>
+      <tr>
+          <th>Equipment Number</th>
+          <th>Address</th>
+          <th>Start Date</th>
+          <th>End Date</th>
+          <th>Status</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr *ngFor="let equipment of equipments">
+          <td>{{equipment.equipment_number}}</td>
+          <td>{{equipment.address}}</td>
+          <td>{{equipment.start_date}}</td>
+          <td>{{equipment.end_date}}</td>
+          <td>{{equipment.status}}</td>
+          <td><button  type="button" class="btn btn-danger btn-simple btn-xs" (click)="viewEquipment(booking)">
+            <i  class="material-icons">view</i>
+        </button></td>
+      </tr>
+  </tbody>
+</table> 
+
